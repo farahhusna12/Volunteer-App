@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/recyclerView4">
+
+    <ImageView
+        android:id="@+id/imgEvent"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="Event Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvEventName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/imgEvent"
+        app:layout_constraintTop_toTopOf="@id/imgEvent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Event Category"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@id/tvEventName"
+        app:layout_constraintTop_toBottomOf="@id/tvEventName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Event DateTime"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvCategory"
+        app:layout_constraintTop_toBottomOf="@id/tvCategory"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Event Location"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tvDate"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Group Project Application</string>
+    <string name="introPic">MainPicture</string>
+    <string name="back">WelcomeBack</string>
+    <string name="welcome">Welcome</string>
+    <string name="prompt_email">Enter Email or Username</string>
+    <string name="prompt_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up_google">Sign In with Google</string>
+    <string name="sign_up_facebook">Sign In with Facebook</string>
+    <string name="login_new_user">New User? Sign Up</string>
+    <string name="current_activity">Current Event</string>
+    <string name="see_all">See All</string>
+    <string name="new_activity">New Event</string>
+    <string name="taskpro">UnityWork</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="username">Username</string>
+    <string name="unitywork">UnityWork</string>
+    <string name="create_account">Create Account</string>
+    <string name="have_account">Already have an account.Sign In</string>
+    <string name="prompt_name">Username</string>
+</resources>

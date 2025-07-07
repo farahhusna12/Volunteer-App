@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dashboardadmin"
+    tools:context=".admin.AdminDashboardActivity"
+    android:background="@drawable/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_product_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/container_admin_page">
+
+        <FrameLayout
+            android:id="@+id/container_tomato"
+            android:layout_width="200dp"
+            android:layout_height="131.67dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/container_total"
+            app:layout_constraintEnd_toStartOf="@id/container_tomato1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/total_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="56.33dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#FF000000"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/total_current_event"
+                android:layout_width="96dp"
+                android:layout_height="29dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center|left"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="18dp"
+                android:includeFontPadding="false"
+                android:lineHeight="14.73dp"
+                android:textStyle="bold"
+                android:text="CURRENT EVENT"
+                android:textColor="#FF000000"
+                android:textSize="11.33dp" />
+
+            <ImageView
+                android:id="@+id/image_calendar"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="90dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_calendar"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/container_tomato1"
+            android:layout_width="200dp"
+            android:layout_height="131.67dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/container_total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/container_tomato"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/total_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="56.33dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#FF000000"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/total_upcoming_event"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="17dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center|left"
+                android:includeFontPadding="false"
+                android:lineHeight="14.73dp"
+                android:text="UPCOMING EVENT"
+                android:textColor="#FF000000"
+                android:textSize="11.33dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_calendar1"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="88dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_calendar" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/container_page_heading"
+            android:layout_width="0dp"
+            android:layout_height="49.67dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container_admin_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="-0.67dp"
+                android:layout_marginBottom="4.66dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="DASHBOARD "
+                android:textColor="#FF000000"
+                android:textSize="21.33dp" />
+
+            <ImageView
+                android:id="@+id/container_divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_dashboard" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_card_grid_content_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="30dp"
+            android:alpha="0.8"
+            android:background="@drawable/container_total"
+            android:clipToPadding="false"
+            android:gravity="left|top"
+            android:paddingLeft="21.33dp"
+            android:paddingTop="20.5dp"
+            android:paddingRight="21.33dp"
+            android:paddingBottom="21.33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_page_heading">
+
+            <TextView
+                android:id="@+id/text_heading"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="-0.83dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="CURRENT EVENT "
+                android:textColor="#FF1E1E1E"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="current date"
+                android:textColor="#FF757575"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_heading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_date"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            android:layout_margin="16dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/admin_nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

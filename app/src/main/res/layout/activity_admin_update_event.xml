@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:background="@drawable/bg"
+    android:id="@+id/update_event"
+    android:columnOrderPreserved="false"
+    android:columnCount="2"
+    android:layout_marginTop="0dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_columnSpan="2"
+        android:background="@drawable/container_admin_page"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text=" UPDATE EVENT "
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/container_admin_page"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="210dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgEvent"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            app:srcCompat="@drawable/default_cover" />
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Change Event Image"
+            android:onClick="uploadEventImg"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="EVENT NAME:" />
+
+            <EditText
+                android:id="@+id/txtEventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="DESCRIPTION:" />
+
+            <EditText
+                android:id="@+id/txtDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:inputType="textMultiLine"
+                android:lines="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="LOCATION:" />
+
+            <EditText
+                android:id="@+id/txtLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="CATEGORY:" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="DATE:" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="YYYY-MM-DD" />
+
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pick Date"
+                android:layout_weight="0.35"
+                android:onClick="showDatePickerDialog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/btnUpdateEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="UPDATE DETAILS EVENT"
+                android:onClick="updateEvent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</GridLayout>
